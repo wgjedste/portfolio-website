@@ -390,6 +390,11 @@ img {
     margin-bottom: .25rem;
 }
 
+.education__button{
+    font-size: var(--h3-font-size);
+}
+
+
 .education__university, .education__specialty {
     display: block;
     font-size: var(--small-font-size);
@@ -398,6 +403,7 @@ img {
 .education__year, .education__university {
     text-align: right;
 }
+
 
 .education__time {
     padding: 0 1rem;
@@ -637,6 +643,11 @@ img {
     .home__button {
         width: initial;
     }
+
+    .home__button:hover{
+        background: linear-gradient(#e66465, #9198e5);
+    }
+
     .nav__menu {
         width: var(--nav-width);
     }
