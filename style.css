@@ -262,6 +262,7 @@ img {
 .button__light {
     background-color: var(--first-color-lighten);
     color: var(--first-color);
+    border: 2px solid var(--first-color-darken);
 }
 
 .button__light:hover {
@@ -484,12 +485,15 @@ img {
 }
 
 .project {
-    background-color: var(--first-color);
+    /* background-color: var(--first-color); */
     padding-bottom: 0;
 }
 
 .project__container {
     row-gap: 2rem;
+    background-image: url(img/orangetest.jpeg);
+    border: 2px solid var(--first-color-darken);
+    border-radius: .5rem;
 }
 
 .project__data {
