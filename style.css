@@ -286,8 +286,9 @@ img {
     display: flex;
     width: auto;
     height: 350px;
-    border-radius: .5rem;
+    border-radius: .8rem;
     margin: 0 auto;
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
 }
 
 .about__information-title {
@@ -679,7 +680,8 @@ img {
     .about__img {
         display: flex;
         width: auto;
-        height: 350px;
+        height: 370px;
+        box-shadow: -20px 20px 20px rgba(0,0,0,0.2);
     }
     
     .about__information {
