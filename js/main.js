@@ -1,7 +1,5 @@
-
-
 const navMenu = document.getElementById('nav-menu'),
-    toggleMenu = document.getElementById('nav-toggle'),
+    toggleMenu = document.getElementById('nav-toggle')
     closeMenu = document.getElementById('nav-close')
 
 
@@ -9,12 +7,9 @@ toggleMenu.addEventListener('click', ()=>{
     navMenu.classList.toggle('show')
 })
 
-
-
 closeMenu.addEventListener('click', ()=>{
     navMenu.classList.remove('show')
 })
-
 
 
 const navLink = document.querySelectorAll('.nav__link')
@@ -46,4 +41,21 @@ function scrollActive(){
         }
     })
 }
+
+
+// const progressBar = document.querySelector('#progress-bar'),
+// const section = document.querySelector('section')
+
+// const animateProgressBar = () => {
+//     let scrollDistance = -section.getBoundingClientRect().top;
+//     let progressWidth = 
+//         (scrollDistance / 
+//             (section.getBoundingClientRect().height - 
+//             document.documentElement.clientHeight)) * 
+//             100;
+//             let value = Math.floor(progressWidth);
+//             progressBar.style.width =  value + "%";
+// }
+
+// window.addEventListener('scroll', animateProgressBar);
 
