@@ -43,19 +43,16 @@ function scrollActive(){
 }
 
 
-// const progressBar = document.querySelector('#progress-bar'),
-// const section = document.querySelector('section')
 
-// const animateProgressBar = () => {
-//     let scrollDistance = -section.getBoundingClientRect().top;
-//     let progressWidth = 
-//         (scrollDistance / 
-//             (section.getBoundingClientRect().height - 
-//             document.documentElement.clientHeight)) * 
-//             100;
-//             let value = Math.floor(progressWidth);
-//             progressBar.style.width =  value + "%";
-// }
+(function(){
+	window.onscroll = function() {ProgressBar()};
 
-// window.addEventListener('scroll', animateProgressBar);
+	function ProgressBar() {
+		var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		var scrolled = (winScroll / height) * 100;
+		document.querySelector(".progress-bar").style.width = scrolled + "%";
+	}
+}());
+
 
