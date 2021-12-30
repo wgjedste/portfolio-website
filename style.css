@@ -268,14 +268,11 @@ img {
 }
 
 .button:hover {
-    /* background-color: var(--first-color-dark); */
     background: linear-gradient(90deg, var(--c1, #cc4b2c), var(--c2, #662616) 51%, var(--c1, #cc4b2c)) var(--x, 0)/ 200%;
     --x: 100%;
 }
 
 .button__light {
-    /* background-color: var(--first-color-lighten); */
-    /* color: var(--first-color); */
     border: 2px solid var(--first-color-darken);
 }
 
@@ -773,6 +770,7 @@ img {
     .nav__menu {
         left: 0;
     }
+    
 
     .home__container {
         height: 100vh;

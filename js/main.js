@@ -43,7 +43,6 @@ function scrollActive(){
 }
 
 
-
 (function(){
 	window.onscroll = function() {ProgressBar()};
 
