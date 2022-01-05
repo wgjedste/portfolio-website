@@ -53,5 +53,3 @@ function scrollActive(){
 		document.querySelector(".progress-bar").style.width = scrolled + "%";
 	}
 }());
-
-
