@@ -573,6 +573,9 @@ img {
     border: solid .5px var(--first-color-darken);
 }
 
+.works__description{
+}
+
 .works__title {
     font-size: var(--h2-font-size);
     color: var(--first-color-lighten);
