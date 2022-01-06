@@ -1,6 +1,7 @@
 /* GOOGLE FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root {
     --header-height: 3 rem;
     --nav-width: 324px;
@@ -178,15 +179,15 @@ img {
 }
 
 /* Progress Bar */
-/* #progress-bar{
+.progress-bar {
     position: fixed;
     top: 0;
     left: 0;
-    height: 8px;
+    width: 8px;
+    height: 4px;
     background: linear-gradient(to right, #290f09, #cc4b2c);
-    width: 20%;
     z-index: 100;
-} */
+}
 
 .show {
     left: 0;
@@ -267,14 +268,11 @@ img {
 }
 
 .button:hover {
-    /* background-color: var(--first-color-dark); */
     background: linear-gradient(90deg, var(--c1, #cc4b2c), var(--c2, #662616) 51%, var(--c1, #cc4b2c)) var(--x, 0)/ 200%;
     --x: 100%;
 }
 
 .button__light {
-    /* background-color: var(--first-color-lighten); */
-    /* color: var(--first-color); */
     border: 2px solid var(--first-color-darken);
 }
 
@@ -300,7 +298,7 @@ img {
     height: 350px;
     border-radius: .8rem;
     margin: 0 auto;
-    box-shadow: -30px 30px 20px rgba(0,0,0,0.2);
+    box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.2);
 }
 
 .about__information-title {
@@ -410,7 +408,7 @@ img {
     font-size: var(--h3-font-size);
 }
 
-.education__button:hover{
+.education__button:hover {
     color: var(--first-color);
 }
 
@@ -575,6 +573,9 @@ img {
     border: solid .5px var(--first-color-darken);
 }
 
+.works__description{
+}
+
 .works__title {
     font-size: var(--h2-font-size);
     color: var(--first-color-lighten);
@@ -674,7 +675,7 @@ img {
         width: initial;
     }
 
-    
+
     /* .home__button:hover{
         background: linear-gradient(#e66465, #9198e5);
     } */
@@ -682,57 +683,72 @@ img {
         width: var(--nav-width);
         opacity: var(--first-color);
     }
+
+
     .about__container, .skills__container, .services__container, .works__container, .contact__container, .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .about__data {
         text-align: initial;
     }
+
     .about__description {
         margin-bottom: var(--mb-5);
     }
+
     .about__img {
         display: flex;
         width: auto;
         height: 370px;
-        box-shadow: -20px 20px 20px rgba(0,0,0,0.2);
+        box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.2);
     }
-    
+
     .about__information {
         padding-left: 4rem;
     }
+
     .education__time {
         padding: 0 2rem;
     }
+
     .project {
         background: none;
     }
+
     .project__container {
         background-color: var(--first-color);
         grid-template-columns: 2fr 1.2fr;
         padding: 0 2rem;
         border-radius: .5rem;
     }
+
     .project__data {
         padding: 3rem 0;
     }
+
     .project__title, .project__data {
         text-align: initial;
     }
+
     .project__img {
         width: 230px;
         align-self: flex-end;
     }
+
     .contact__inputs {
         display: grid;
         column-gap: 1.5rem;
     }
+
     .contact__info {
         padding-left: 3rem;
     }
+
     .footer {
         background: none;
     }
+
     .footer__container {
         background-color: var(--first-color-darken);
         padding: 3rem 0;
@@ -749,25 +765,33 @@ img {
     .l-header {
         width: 0;
     }
+
     .nav__toggle, .nav__logo, .nav__close {
         display: none;
     }
+
     .nav__menu {
         left: 0;
     }
+    
+
     .home__container {
         height: 100vh;
     }
+
     .section {
         padding: 3rem 0 2rem;
     }
+
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
     }
+
     .works__container {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .services__container {
         grid-template-columns: repeat(2, 1fr);
     }
