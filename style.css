@@ -575,7 +575,7 @@ img {
 
 
 .works__title {
-    /* display: block; */
+    display: block;
     text-align: center;
     font-size: var(--h2-font-size);
     color: var(--first-color-lighten);
