@@ -573,10 +573,10 @@ img {
     border: solid .5px var(--first-color-darken);
 }
 
+.works__description{
+}
 
 .works__title {
-    display: block;
-    text-align: center;
     font-size: var(--h2-font-size);
     color: var(--first-color-lighten);
 }
@@ -795,4 +795,4 @@ img {
     .services__container {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+}   

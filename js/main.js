@@ -1,65 +1,67 @@
+const navMenu = document.getElementById("nav-menu"),
+  toggleMenu = document.getElementById("nav-toggle");
+closeMenu = document.getElementById("nav-close");
 
+toggleMenu.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});
 
-const navMenu = document.getElementById('nav-menu'),
-    toggleMenu = document.getElementById('nav-toggle'),
-    closeMenu = document.getElementById('nav-close')
+closeMenu.addEventListener("click", () => {
+  navMenu.classList.remove("show");
+});
 
+const navLink = document.querySelectorAll(".nav__link");
 
-toggleMenu.addEventListener('click', ()=>{
-    navMenu.classList.toggle('show')
-})
-
-
-
-closeMenu.addEventListener('click', ()=>{
-    navMenu.classList.remove('show')
-})
-
-
-
-const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction(){
-    navMenu.classList.remove('show')
+function linkAction() {
+  navMenu.classList.remove("show");
 }
 
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll("section[id]");
 
-window.addEventListener('scroll', scrollActive)
+window.addEventListener("scroll", scrollActive);
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
+function scrollActive() {
+  const scrollY = window.pageYOffset;
 
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50
-        sectionId = current.getAttribute('id')
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute("id");
 
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.add('active')
-        }else{
-            document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.remove('active')
-
-        }
-    })
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.add("active");
+    } else {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.remove("active");
+    }
+  });
 }
 
+(function () {
+  window.onscroll = function () {
+    ProgressBar();
+  };
 
-// const progressBar = document.querySelector('#progress-bar'),
-// const section = document.querySelector('section')
+  function ProgressBar() {
+    var winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    var height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.querySelector(".progress-bar").style.width = scrolled + "%";
+  }
+})();
 
-// const animateProgressBar = () => {
-//     let scrollDistance = -section.getBoundingClientRect().top;
-//     let progressWidth = 
-//         (scrollDistance / 
-//             (section.getBoundingClientRect().height - 
-//             document.documentElement.clientHeight)) * 
-//             100;
-//             let value = Math.floor(progressWidth);
-//             progressBar.style.width =  value + "%";
-// }
 
-// window.addEventListener('scroll', animateProgressBar);
+const modalBtn = document.getElementById(".work__link");
+const modalBg = document.getElementById(".work__title");
+
+modalBtn.addEventListener('click', function(){
+    
+})
