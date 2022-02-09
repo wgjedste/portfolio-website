@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/components/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- BOX ICONS -->
     <link
@@ -297,6 +297,30 @@
         </div>
       </section>
 
+       
+       <!-- <button id="open" class="modal-button">
+         Click Me
+       </button>
+       <div id="modal_container" class="modal-container">
+         <div class="modal">
+           <h1>Modal Information</h1>
+           <button id="close" class="modal-button">Close</button>
+         </div>
+       </div> -->
+
+       <button data-modal-target="#modal">Open Modal</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Example Modal</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      <a href="https://myflix-client-angular.netlify.app">Click Me</a>
+    </div>
+  </div>
+  <div id="overlay"></div>
+    
+
 
       <section class="works section" id="works">
         <span class="section-subtitle">My Portfolio</span>
@@ -333,14 +357,27 @@
             </div>
           </div>
 
-
+          <!-- Modal -->
           <div class="works__img">
             <img src="img/work5.jpg" alt="">
 
             <div class="works__data">
               <span class="works__title">Angular App</span>
-              <a href="https://myflix-client-angular.netlify.app" class="works__link" target="blank"></a>
-            </div>
+
+
+              <button data-modal-target="#modal">Open Modal</button>
+            
+              <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">Example Modal</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <a href="https://myflix-client-angular.netlify.app"></a>
+                </div>
+              </div>
+              <div id="overlay"></div>
+              </div>
           </div>
 
 
@@ -411,7 +448,7 @@
 
       </section>
       <script src="js/main.js"></script>
-      <script src="js/contact.js"></script>
+      <script src="js/modal.js"></script>
     </main>
 
     <footer class="footer section">

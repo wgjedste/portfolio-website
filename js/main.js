@@ -1,6 +1,6 @@
-const navMenu = document.getElementById("nav-menu"),
+  const navMenu = document.getElementById("nav-menu"),
   toggleMenu = document.getElementById("nav-toggle");
-closeMenu = document.getElementById("nav-close");
+  closeMenu = document.getElementById("nav-close");
 
 toggleMenu.addEventListener("click", () => {
   navMenu.classList.toggle("show");
@@ -42,6 +42,7 @@ function scrollActive() {
   });
 }
 
+// Scroll Bar
 (function () {
   window.onscroll = function () {
     ProgressBar();
@@ -59,9 +60,3 @@ function scrollActive() {
 })();
 
 
-const modalBtn = document.getElementById(".work__link");
-const modalBg = document.getElementById(".work__title");
-
-modalBtn.addEventListener('click', function(){
-    
-})
