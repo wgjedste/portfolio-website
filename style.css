@@ -565,12 +565,8 @@ img {
 .works__link {
     display: inline-flex;
     font-size: 1.5rem;
-    background-color: var(--first-color-lighten);
-    color: var(--first-color);
-    padding: .25rem;
-    border-radius: .25rem;
-    margin-bottom: var(--mb-2);
-    border: solid .5px var(--first-color-darken);
+    background-color: var(--first-color);
+    color: white;
 }
 
 .works__title {
@@ -841,9 +837,12 @@ img {
     .modal-logo{
         display: flex;
         align-items: vertical;
+        width: 30px;
+        height: 30px;
     }
+
     
-    /* Add Animation */
+    /* Animation */
     @-webkit-keyframes animatetop {
         from {top:-300px; opacity:0}
         to {top:0; opacity:1}
@@ -854,7 +853,7 @@ img {
         to {top:0; opacity:1}
     }
     
-    /* The Close Button */
+    /* Close Button */
     .close {
         color: white;
         float: right;
@@ -875,7 +874,10 @@ img {
         color: white;
     }
     
-    .modal-body {padding: 2px 16px;}
+    .modal-body {
+        padding: 2px 16px;
+    }
+
     
     .modal-footer {
         padding: 2px 16px;
