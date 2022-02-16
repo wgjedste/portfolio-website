@@ -564,8 +564,11 @@ img {
 
 .works__link {
     display: inline-flex;
-    font-size: 1.5rem;
-    background-color: var(--first-color);
+    margin-right: 5px;
+    font-size: 1rem;
+    border: 4px solid var(--first-color-dark);
+    border-radius: .5rem;
+    background-color: var(--first-color-dark);
     color: white;
 }
 
@@ -824,7 +827,7 @@ img {
     .modal-button{
         background: var(--first-color);
         border-radius: .4rem;
-        opacity: 91%;
+        opacity: 92%;
         border: 2px solid var(--first-color-darken);
         font-size: var(--h2-font-size);
         color: var(--first-color-lighten);
@@ -880,7 +883,8 @@ img {
 
     
     .modal-footer {
-        padding: 2px 16px;
+        display: flex;
+        padding: 8px 16px;
         background-color: var(--first-color);
         color: white;
     }
