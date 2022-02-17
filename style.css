@@ -295,7 +295,7 @@ img {
 .about__img {
     display: flex;
     width: auto;
-    height: 350px;
+    /* height: 350px; */
     border-radius: .8rem;
     margin: 0 auto;
     box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.2);
@@ -517,8 +517,6 @@ img {
 }
 
 .project__title, .project__description {
-    /* -webkit-text-stroke-width: .1px;
-    -webkit-text-stroke-color: var(--first-color); */
     color: var(--first-color-lighten);
     background-color: #cc4b2c;
     border-radius: .6rem;
@@ -542,10 +540,11 @@ img {
 }
 
 .works__img {
+    display: flex;
     position: relative;
     overflow: hidden;
     border-radius: .5rem;
-    display: flex;
+    box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 .works__data {
@@ -671,10 +670,6 @@ img {
         width: initial;
     }
 
-
-    /* .home__button:hover{
-        background: linear-gradient(#e66465, #9198e5);
-    } */
     .nav__menu {
         width: var(--nav-width);
         opacity: var(--first-color);
@@ -734,7 +729,7 @@ img {
 
     .contact__inputs {
         display: grid;
-        column-gap: 1.5rem;
+        column-gap: var(--mb-3);
     }
 
     .contact__info {
@@ -793,19 +788,19 @@ img {
     }
 
     .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 100px; 
         padding-left: 250px;
         border: 1px solid black;
         left: 0;
         top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.3); 
     }
     
     /* Modal Content */
